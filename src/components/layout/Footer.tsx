@@ -37,7 +37,7 @@ export function Footer() {
             </a>
           </div>
           <h2 style={{ fontSize: "var(--footer-title-size)", fontWeight: 900, lineHeight: 1.05, letterSpacing: "-0.04em", textTransform: "uppercase" }}>
-            Ready to start saving<br />on your AI content?
+            Ready to start saving<br />on your video content?
           </h2>
           <Button style={{ backgroundColor: "white", color: "var(--accent)" }} showArrow={true}>
             Claim Launch Discount
