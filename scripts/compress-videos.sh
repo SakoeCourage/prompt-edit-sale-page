@@ -8,7 +8,7 @@ TEMP_DIR="public/feat-videos-temp"
 mkdir -p "$TEMP_DIR"
 
 echo "============================================="
-echo "🎥 STARTING PRO-LEVEL VIDEO COMPRESSION"
+echo "🎥 STARTING AGGRESSIVE KILOBYTE VIDEO COMPRESSION"
 echo "============================================="
 
 # Find all MP4s in target dir
@@ -20,18 +20,20 @@ for filepath in "$TARGET_DIR"/*.mp4; do
   destpath="$TEMP_DIR/$filename"
 
   echo "---------------------------------------------"
-  echo "🎬 Compressing: $filename"
+  echo "🎬 Compressing to Kilobytes: $filename"
 
   # Measure initial size
   initial_size=$(wc -c < "$filepath")
   initial_size_kb=$((initial_size / 1024))
 
-  # Run hyper-optimized compression command
-  # -an strips audio
-  # -crf 28 optimizes for high-end web loading with small footprint
-  # -pix_fmt yuv420p guarantees universal safari/chrome compatibility
-  # -movflags +faststart moves moov atom to front for instant stream playing
-  ffmpeg -y -i "$filepath" -an -vcodec libx264 -crf 28 -preset slow -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -movflags +faststart "$destpath" > /dev/null 2>&1
+  # Run ultra-aggressive web compression
+  # -an: Strip audio
+  # -crf 32: Extra compression while keeping background loops clean
+  # -r 24: Cap framerate to 24fps
+  # -vf scale=640:360: Downscale to 360p (perfect for bento boxes)
+  # -t 8: Cap loop duration to 8 seconds max
+  # -movflags +faststart: Instant play loading
+  ffmpeg -y -i "$filepath" -an -vcodec libx264 -crf 32 -preset slow -pix_fmt yuv420p -r 24 -vf "scale=640:360" -t 8 -movflags +faststart "$destpath" > /dev/null 2>&1
 
   # Measure final size
   final_size=$(wc -c < "$destpath")
@@ -54,7 +56,8 @@ echo "🎬 Compressing: public/hero-bg.mp4"
 initial_size=$(wc -c < "public/hero-bg.mp4")
 initial_size_kb=$((initial_size / 1024))
 
-ffmpeg -y -i "public/hero-bg.mp4" -an -vcodec libx264 -crf 28 -preset slow -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -movflags +faststart "public/hero-bg-temp.mp4" > /dev/null 2>&1
+# Downscale hero bg to 800:450 (keep full-screen loop crisp but tiny in KB!)
+ffmpeg -y -i "public/hero-bg.mp4" -an -vcodec libx264 -crf 32 -preset slow -pix_fmt yuv420p -r 24 -vf "scale=800:450" -t 5 -movflags +faststart "public/hero-bg-temp.mp4" > /dev/null 2>&1
 
 final_size=$(wc -c < "public/hero-bg-temp.mp4")
 final_size_kb=$((final_size / 1024))
@@ -74,5 +77,5 @@ mv "public/hero-bg-temp.mp4" "public/hero-bg.mp4"
 # Remove temp folder
 rm -rf "$TEMP_DIR"
 
-echo "✨ All videos compressed successfully with pixel-perfect Web H.264 formats!"
+echo "✨ All videos successfully compressed into lightweight KILOBYTES range!"
 echo "============================================="
