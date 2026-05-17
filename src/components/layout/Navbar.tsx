@@ -34,11 +34,11 @@ export function Navbar() {
           <li><a href="#features">Workspaces</a></li>
           <li><a href="#benefits">Savings Flow</a></li>
           <li><a href="#providers">Providers</a></li>
-          <li><a href="#testimonials">Creators</a></li>
+          <li><a href="#testimonials">Trusted By</a></li>
           <li><a href="#sandbox">Playground</a></li>
         </ul>
         <div className="nav-actions">
-          <Button className="nav-button">Get Started</Button>
+          <Button className="nav-button">Join Us</Button>
           <button
             className={`nav-burger ${menuOpen ? "nav-burger-open" : ""}`}
             onClick={() => setMenuOpen((prev) => !prev)}
@@ -68,11 +68,11 @@ export function Navbar() {
             <li><a href="#features" onClick={handleLinkClick}>Workspaces</a></li>
             <li><a href="#benefits" onClick={handleLinkClick}>Savings Flow</a></li>
             <li><a href="#providers" onClick={handleLinkClick}>Providers</a></li>
-            <li><a href="#testimonials" onClick={handleLinkClick}>Creators</a></li>
+            <li><a href="#testimonials" onClick={handleLinkClick}>Trusted By</a></li>
             <li><a href="#sandbox" onClick={handleLinkClick}>Playground</a></li>
           </ul>
           <div className="nav-drawer-cta">
-            <Button onClick={handleLinkClick} style={{ width: "100%", justifyContent: "center" }}>Get Started</Button>
+            <Button onClick={handleLinkClick} style={{ width: "100%", justifyContent: "center" }}>Join Us</Button>
           </div>
         </div>
       </nav>

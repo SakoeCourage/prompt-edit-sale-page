@@ -112,7 +112,7 @@ export function Benefits() {
             </div>
           </div>
           <div className={styles.benefitsCtaRow}>
-            <Button>Claim Welcome Offer</Button>
+            <Button>Join Our Community </Button>
           </div>
         </div>
       </div>

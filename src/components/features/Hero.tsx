@@ -64,7 +64,7 @@ export function Hero() {
               Instead of signing up for multiple websites, learning different interfaces, and stacking expensive subscriptions... PromptEdit gives you a single place to access all the major tools.
             </Text>
             <div className={styles.heroCtaWrapper}>
-              <Button>Get Started</Button>
+              <Button>Join Us</Button>
               <div className={styles.activeUsers}>
                 <div className={styles.avatarStack}>
                   <div className={styles.avatar} style={{ backgroundColor: "#ed1c24" }}>A</div>

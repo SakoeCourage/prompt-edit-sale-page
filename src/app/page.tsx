@@ -25,7 +25,7 @@ export default function Home() {
     { id: "features", label: "Workspaces", component: <Features /> },
     { id: "benefits", label: "Savings Flow", component: <Benefits /> },
     { id: "providers", label: "Model Providers", component: <Partners /> },
-    { id: "testimonials", label: "Creators", component: <Testimonials /> },
+    { id: "testimonials", label: "Trusted By", component: <Testimonials /> },
     { id: "sandbox", label: "Playground", component: <Sandbox /> }
   ];
 
