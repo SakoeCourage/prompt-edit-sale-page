@@ -179,61 +179,63 @@ export function Testimonials() {
 
   return (
     <section className={styles.sectionLight} style={{ backgroundColor: "#fafafa", padding: "5rem 0" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem", boxSizing: "border-box" }}>
-        <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-          <span style={{ 
-            color: "#ed1c24", 
-            fontWeight: 800, 
-            fontSize: "0.8rem", 
-            letterSpacing: "0.15em", 
-            textTransform: "uppercase",
-            background: "rgba(237, 28, 36, 0.07)",
-            padding: "0.55rem 1.2rem",
-            borderRadius: "9999px",
-            display: "inline-block"
-          }}>
-            Trusted By
-          </span>
-          <h2 style={{ 
-            fontSize: "var(--section-title-size, 2.5rem)", 
-            fontWeight: 900, 
-            marginTop: "1.25rem", 
-            color: "#111111",
-            letterSpacing: "-0.03em"
-          }}>
-            Powering Creative Teams Globally
-          </h2>
-          <p style={{ 
-            color: "#666666", 
-            fontSize: "1.05rem", 
-            maxWidth: "600px", 
-            margin: "0.85rem auto 0",
-            lineHeight: 1.6
-          }}>
-            PromptEdit is trusted by professional builders, copywriters, digital designers, and creators at industry-leading organizations.
-          </p>
+      <div style={{ width: "100%", display: "flex", flexDirection: "column" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem", boxSizing: "border-box" }}>
+          <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
+            <span style={{ 
+              color: "#ed1c24", 
+              fontWeight: 800, 
+              fontSize: "0.8rem", 
+              letterSpacing: "0.15em", 
+              textTransform: "uppercase",
+              background: "rgba(237, 28, 36, 0.07)",
+              padding: "0.55rem 1.2rem",
+              borderRadius: "9999px",
+              display: "inline-block"
+            }}>
+              Trusted By
+            </span>
+            <h2 style={{ 
+              fontSize: "var(--section-title-size, 2.5rem)", 
+              fontWeight: 900, 
+              marginTop: "1.25rem", 
+              color: "#111111",
+              letterSpacing: "-0.03em"
+            }}>
+              Powering Creative Teams Globally
+            </h2>
+            <p style={{ 
+              color: "#666666", 
+              fontSize: "1.05rem", 
+              maxWidth: "600px", 
+              margin: "0.85rem auto 0",
+              lineHeight: 1.6
+            }}>
+              PromptEdit is trusted by professional builders, copywriters, digital designers, and creators at industry-leading organizations.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="marquee-container">
-        <div className="marquee-track-left">
-          {row1.concat(row1).map((item, idx) => (
-            <div key={`${item.name}-${idx}`} className="marquee-item">
-              {item.icon}
-              <span>{item.name}</span>
-            </div>
-          ))}
+        <div className="marquee-container">
+          <div className="marquee-track-left">
+            {row1.concat(row1).map((item, idx) => (
+              <div key={`${item.name}-${idx}`} className="marquee-item">
+                {item.icon}
+                <span>{item.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div className="marquee-container" style={{ marginTop: "0.5rem" }}>
-        <div className="marquee-track-right">
-          {row2.concat(row2).map((item, idx) => (
-            <div key={`${item.name}-${idx}`} className="marquee-item">
-              {item.icon}
-              <span>{item.name}</span>
-            </div>
-          ))}
+        <div className="marquee-container" style={{ marginTop: "0.5rem" }}>
+          <div className="marquee-track-right">
+            {row2.concat(row2).map((item, idx) => (
+              <div key={`${item.name}-${idx}`} className="marquee-item">
+                {item.icon}
+                <span>{item.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
