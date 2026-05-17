@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "@/app/page.module.css";
+import { Button } from "@/components/ui/Button";
 
 export function Testimonials() {
   const row1 = [
@@ -181,38 +182,19 @@ export function Testimonials() {
     <section className={styles.sectionLight} style={{ backgroundColor: "#fafafa", padding: "5rem 0" }}>
       <div style={{ width: "100%", display: "flex", flexDirection: "column" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem", boxSizing: "border-box" }}>
-          <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-            <span style={{ 
-              color: "#ed1c24", 
-              fontWeight: 800, 
-              fontSize: "0.8rem", 
-              letterSpacing: "0.15em", 
-              textTransform: "uppercase",
-              background: "rgba(237, 28, 36, 0.07)",
-              padding: "0.55rem 1.2rem",
-              borderRadius: "9999px",
-              display: "inline-block"
-            }}>
+          <div className={styles.trustedHeader}>
+            <span className={styles.trustedBadge}>
               Trusted By
             </span>
-            <h2 style={{ 
-              fontSize: "var(--section-title-size, 2.5rem)", 
-              fontWeight: 900, 
-              marginTop: "1.25rem", 
-              color: "#111111",
-              letterSpacing: "-0.03em"
-            }}>
+            <h2 className={styles.trustedTitle}>
               Powering Creative Teams Globally
             </h2>
-            <p style={{ 
-              color: "#666666", 
-              fontSize: "1.05rem", 
-              maxWidth: "600px", 
-              margin: "0.85rem auto 0",
-              lineHeight: 1.6
-            }}>
+            <p className={styles.trustedDesc}>
               PromptEdit is trusted by professional builders, copywriters, digital designers, and creators at industry-leading organizations.
             </p>
+            <div style={{ marginTop: "1.25rem" }}>
+              <Button style={{ padding: "0.55rem 1.25rem", fontSize: "0.85rem" }}>Join Our Community</Button>
+            </div>
           </div>
         </div>
 

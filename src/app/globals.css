@@ -569,15 +569,15 @@ a {
 .marquee-item {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.8rem 1.6rem;
-  margin: 0 0.6rem;
+  gap: 0.6rem;
+  padding: 0.65rem 1.25rem;
+  margin: 0 0.5rem;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   font-weight: 800;
   color: #1a1a1a;
-  font-size: 1.05rem;
+  font-size: 0.92rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.015);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   letter-spacing: -0.02em;
@@ -592,6 +592,8 @@ a {
 }
 
 .marquee-item svg {
+  width: 15px !important;
+  height: 15px !important;
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
@@ -599,4 +601,27 @@ a {
 .marquee-item:hover svg {
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .marquee-container {
+    padding: 0.75rem 0;
+    margin: 0.25rem 0;
+  }
+  .marquee-container::before,
+  .marquee-container::after {
+    width: 10%;
+  }
+  .marquee-item {
+    gap: 0.5rem;
+    padding: 0.45rem 0.9rem;
+    margin: 0 0.35rem;
+    font-size: 0.78rem;
+    border-radius: 9px;
+  }
+  .marquee-item svg {
+    width: 13px !important;
+    height: 13px !important;
+  }
+}
+
 

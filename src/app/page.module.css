@@ -1784,3 +1784,53 @@
   }
 }
 
+/* Trusted By Section Styling */
+.trustedHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.trustedBadge {
+  color: #ed1c24;
+  font-weight: 800;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: rgba(237, 28, 36, 0.07);
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+.trustedTitle {
+  font-size: 2.1rem;
+  font-weight: 900;
+  margin-top: 1rem;
+  color: #111111;
+  letter-spacing: -0.03em;
+}
+
+.trustedDesc {
+  color: #666666;
+  font-size: 0.95rem;
+  max-width: 580px;
+  margin: 0.75rem auto 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .trustedHeader {
+    margin-bottom: 1.5rem;
+  }
+  .trustedTitle {
+    font-size: 1.45rem !important;
+    margin-top: 0.75rem;
+  }
+  .trustedDesc {
+    font-size: 0.85rem !important;
+    margin-top: 0.5rem;
+    padding: 0 0.5rem;
+  }
+}
+
+
