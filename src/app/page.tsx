@@ -62,7 +62,7 @@ export default function Home() {
           start: "top top+=72",
           end: () => `+=${outer.offsetHeight * (sections.length - 1) * 1.8}`,
           snap: {
-            snapTo: (value) => {
+            snapTo: (value: number) => {
               const labelNames = Object.keys(tl.labels);
               const labelProgresses = labelNames.map(name => tl.labels[name] / tl.totalDuration());
               
