@@ -33,7 +33,7 @@ export function Hero() {
           {/* Left Column: Headline and CTA */}
           <div className={styles.heroLeft}>
             <Heading level={1} style={{ fontSize: "var(--hero-title-size, 3.6rem)", lineHeight: "1.1", fontWeight: 900, letterSpacing: "-0.03em" }}>
-              All Your AI Tools.
+              Every Video You Can Dream Of.
             </Heading>
             <div style={{ marginTop: "1rem", marginBottom: "1.8rem", display: "flex", gap: "1.5rem", alignItems: "center" }}>
               <span style={{ 
@@ -61,7 +61,7 @@ export function Hero() {
               </span>
             </div>
             <Text variant="sub" style={{ marginTop: "0" }}>
-              Instead of signing up for multiple websites, learning different interfaces, and stacking expensive subscriptions... PromptEdit gives you a single place to access all the major tools.
+              Instead of signing up for multiple platforms, learning complex interfaces, and stacking expensive subscriptions... PromptEdit gives you one place to synthesize stunning cinematic motion using the world’s leading generative engines.
             </Text>
             <div className={styles.heroCtaWrapper}>
               <Button>Join Us</Button>
