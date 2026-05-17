@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PromptEdit — Front-End Developer Test Interview
 
-## Getting Started
+This repository contains the interactive landing page and workspace experience for **PromptEdit**, developed as part of a front-end developer remote job interview test.
 
-First, run the development server:
+## 🚀 Project Overview
+
+PromptEdit is a state-of-the-art pay-as-you-go visual generative content playground. Instead of stacking expensive monthly subscriptions across multiple different AI tools, copywriters, copy editors, and digital creators can switch between all leading AI video, image, and text generation engines instantly—all from a single, unified pay-as-you-go credit pool.
+
+### ✨ Completed Refinements & Features
+
+1. **Brand Identity Rebranding**:
+   - Swapped the orange accent palette globally to a premium crimson **Brand Red (`#ed1c24` / `#b30e16`)** matching the brand's custom favicon mark.
+   - Refined the primary hero header to the punchy, high-impact **"Words to Video, Instantly"** callout.
+
+2. **Mobile Sidebar Navigation**:
+   - Restructured navbar into a client-controlled state drawer for responsive viewports.
+   - Designed a right-side sliding panel with high-performance CSS transition timing and spring curves.
+   - Integrated backdrop dimming overlays and automatic click-outside close handlers.
+   - Added a branded drawer header containing the favicon brand mark and custom text alignment.
+
+3. **Premium Infinite Marquees**:
+   - Replaced static content blocks with a high-end, dual-row horizontal auto-scrolling **"Trusted By"** company showcase.
+   - Hand-crafted 20 pixel-perfect SVG brand logo cards (Stripe, Vercel, Supabase, Linear, Notion, Sentry, Clerk, Pinecone, and more).
+   - Configured interactive pause-on-hover mechanics and custom floating hover states.
+   - Optimized marquee dimensions, paddings, and font sizes to be completely responsive and elegant on all viewports.
+
+4. **GSAP Animation Pinning**:
+   - Wrapped page slides inside highly cohesive layout envelopes to ensure precise scroll heights and automatic vertical overflow pinning and snapping.
+
+## 🛠️ Tech Stack & Architecture
+
+- **Framework**: Next.js (React / TypeScript)
+- **Styling**: Scoped CSS Modules (`page.module.css`) + Vanilla CSS Tokens (`globals.css`)
+- **Animation**: GSAP (GreenSock Animation Platform) + `ScrollTrigger`
+- **Asset Loader**: Responsive state-based visual controllers with shimmer loaders
+
+## 📦 Getting Started
+
+First, install the workspace dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) with your browser to experience the polished platform.
