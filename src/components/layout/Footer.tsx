@@ -57,7 +57,7 @@ export function Footer() {
           <div className={styles.footerCol}>
             <h4>Platform</h4>
             <ul>
-              <li><a href="#">How It Works</a></li>
+              <li><a href="#steps">Why PromptEdit</a></li>
               <li><a href="#">Pricing Calculator</a></li>
               <li><a href="#">Compare Models</a></li>
               <li><a href="#">Developer API</a></li>

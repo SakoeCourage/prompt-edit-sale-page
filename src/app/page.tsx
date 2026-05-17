@@ -21,7 +21,7 @@ export default function Home() {
 
   const sections = [
     { id: "hero", label: "Hero", component: <Hero /> },
-    { id: "steps", label: "How It Works", component: <HeroSteps /> },
+    { id: "steps", label: "Why PromptEdit", component: <HeroSteps /> },
     { id: "features", label: "Workspaces", component: <Features /> },
     { id: "benefits", label: "Savings Flow", component: <Benefits /> },
     { id: "providers", label: "Model Providers", component: <Partners /> },
