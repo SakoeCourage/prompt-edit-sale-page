@@ -104,7 +104,7 @@ export function Sandbox() {
           type="video/mp4"
         />
       </video>
-      <div className={styles.heroBgOverlay} style={{ background: "rgba(9, 10, 15, 0.88)" }}></div>
+      <div className={styles.heroBgOverlay} style={{ background: "rgba(9, 10, 15, 0.70)" }}></div>
 
       {/* 🔮 Ethereal breathing vermilion ambient aurora when generating assets */}
       <div className={`${styles.sandboxAmbientGlow} ${step === "generating" ? styles.sandboxAmbientGlowActive : ""}`} />
@@ -158,11 +158,11 @@ export function Sandbox() {
             {/* Premium Info Badges */}
             <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", alignItems: "center", marginTop: "0.5rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.75rem", color: "rgba(255, 255, 255, 0.4)" }}>
-                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#ff4500" }} />
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#ed1c24" }} />
                 Instant multi-model synthesis
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.75rem", color: "rgba(255, 255, 255, 0.4)" }}>
-                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#ff4500" }} />
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#ed1c24" }} />
                 Real-time credit routing
               </div>
             </div>
@@ -172,8 +172,8 @@ export function Sandbox() {
         {/* ⚡ Step 2: Generating Simulation State */}
         {step === "generating" && (
           <div className={styles.sandboxGeneratingContainer}>
-            <div className={styles.outcomeLoadingGlow} style={{ position: "static", width: "48px", height: "48px", borderRadius: "50%", background: "rgba(255, 69, 0, 0.15)", border: "2px solid #ff4500", borderTopColor: "transparent", animation: "bentoShimmer 1.2s infinite linear" }} />
-            <span style={{ fontFamily: "var(--font-geist-mono, monospace)", color: "#ff4500", fontSize: "0.8rem", letterSpacing: "2px" }}>
+            <div className={styles.outcomeLoadingGlow} style={{ position: "static", width: "48px", height: "48px", borderRadius: "50%", background: "rgba(237, 28, 36, 0.15)", border: "2px solid #ed1c24", borderTopColor: "transparent", animation: "bentoShimmer 1.2s infinite linear" }} />
+            <span style={{ fontFamily: "var(--font-geist-mono, monospace)", color: "#ed1c24", fontSize: "0.8rem", letterSpacing: "2px" }}>
               SYNTHESIZING IMAGINATION...
             </span>
           </div>
@@ -184,7 +184,7 @@ export function Sandbox() {
           <div className={styles.sandboxCompletedContainer}>
             {/* Show original prompt beautifully mapped */}
             <div style={{ textAlign: "center", maxWidth: "550px" }}>
-              <span style={{ fontSize: "0.7rem", color: "#ff4500", letterSpacing: "1.5px", textTransform: "uppercase", fontFamily: "var(--font-geist-mono, monospace)" }}>
+              <span style={{ fontSize: "0.7rem", color: "#ed1c24", letterSpacing: "1.5px", textTransform: "uppercase", fontFamily: "var(--font-geist-mono, monospace)" }}>
                 PROMPT SYNTHESIZED
               </span>
               <p style={{ fontSize: "0.9rem", color: "rgba(255, 255, 255, 0.75)", fontStyle: "italic", marginTop: "0.4rem", fontFamily: "var(--font-geist-mono, monospace)" }}>

@@ -272,12 +272,12 @@ export function Features() {
           </div>
 
           {/* Card 6: Social Publishing Aspect Ratio Card (Wide, column span 2) */}
-          <div className={`${styles.bentoCard} ${styles.bentoCol2}`} style={{ background: "linear-gradient(135deg, #1f1f26, #121216)", border: "1px solid rgba(255, 69, 0, 0.15)", position: "relative", minHeight: "220px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <div style={{ zIndex: 2, maxWidth: "50%" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                <span className={styles.bentoBadge} style={{ background: "rgba(255, 69, 0, 0.1)", color: "#ff4500", border: "1px solid rgba(255, 69, 0, 0.2)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+          <div className={`${styles.bentoCard} ${styles.bentoCol2}`} style={{ background: "linear-gradient(135deg, #1f1f26, #121216)", border: "1px solid rgba(237, 28, 36, 0.15)", position: "relative", minHeight: "220px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <div className={styles.bentoShareText}>
+              <div className={styles.bentoShareBadgeWrapper}>
+                <span className={styles.bentoBadge} style={{ background: "rgba(237, 28, 36, 0.1)", color: "#ed1c24", border: "1px solid rgba(237, 28, 36, 0.2)", display: "flex", alignItems: "center", gap: "0.3rem" }}>
                   {/* Share Icon SVG */}
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#ff4500" }}>
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#ed1c24" }}>
                     <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
                     <polyline points="16 6 12 2 8 6"></polyline>
                     <line x1="12" y1="2" x2="12" y2="15"></line>
@@ -293,7 +293,7 @@ export function Features() {
               </p>
 
               {/* Minimal Social Media Bubble Row directly below */}
-              <div style={{ display: "flex", gap: "0.6rem", marginTop: "1rem", alignItems: "center" }}>
+              <div className={styles.bentoShareSocials}>
                 {/* TikTok Mini */}
                 <div className={styles.socialIconMini} title="TikTok">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">

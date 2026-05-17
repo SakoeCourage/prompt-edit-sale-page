@@ -17,9 +17,7 @@ export function HeroSteps() {
           <Heading level={2} style={{ textTransform: "uppercase", letterSpacing: "-0.03em" }}>
             How PromptEdit Works
           </Heading>
-          <Text variant="sub" style={{ marginTop: "1rem", color: "#aaa", lineHeight: "1.6" }}>
-            Think of PromptEdit like a grocery store for AI. Instead of signing up for a bunch of different websites, learning a bunch of different interfaces, and stacking expensive subscriptions on top of each other, PromptEdit gives you one place to access all the major tools you need to create AI content.
-          </Text>
+          <Text variant="sub" style={{ marginTop: "1rem", color: "#aaa", lineHeight: "1.6", textAlign: "center", margin: "1rem auto 0 auto", maxWidth: "100%" }}>Think of PromptEdit like a grocery store for AI. Instead of signing up for a bunch of different websites, learning a bunch of different interfaces, and stacking expensive subscriptions on top of each other, PromptEdit gives you one place to access all the major tools you need to create AI content.</Text>
         </div>
 
         <div className={styles.heroBottomSteps} style={{ borderTop: "none", marginTop: 0 }}>

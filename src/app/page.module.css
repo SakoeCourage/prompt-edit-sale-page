@@ -239,7 +239,7 @@
 
 /* Fanned out dispersion values (open by default) */
 .cardOrange {
-  background: linear-gradient(135deg, #ff5500, #ff2200);
+  background: linear-gradient(135deg, #ed1c24, #b30e16);
   z-index: 3;
   transform: rotate(-14deg) translate(-50px, -40px);
 }
@@ -389,7 +389,7 @@
 }
 
 .horizontalStepCard:hover {
-  border-color: rgba(255, 69, 0, 0.3);
+  border-color: rgba(237, 28, 36, 0.3);
   background: rgba(255, 255, 255, 0.04);
   transform: translateY(-4px);
 }
@@ -538,7 +538,7 @@
 
 .bentoCard:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 69, 0, 0.25);
+  border-color: rgba(237, 28, 36, 0.25);
 }
 
 /* Bento grid sizing modifiers */
@@ -557,7 +557,7 @@
 }
 
 .bentoCardDark:hover {
-  border-color: rgba(255, 69, 0, 0.4);
+  border-color: rgba(237, 28, 36, 0.4);
 }
 
 /* Card image / video visual display */
@@ -617,7 +617,7 @@
   font-weight: 700;
   padding: 0.25rem 0.6rem;
   border-radius: 6px;
-  background: rgba(255, 69, 0, 0.1);
+  background: rgba(237, 28, 36, 0.1);
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -709,19 +709,19 @@
 
 .activeFrame {
   z-index: 10 !important;
-  border-color: #ff4500 !important;
+  border-color: #ed1c24 !important;
   background: rgba(40, 40, 48, 0.85) !important;
-  color: #ff4500 !important;
-  box-shadow: 0 10px 30px rgba(255, 69, 0, 0.18);
+  color: #ed1c24 !important;
+  box-shadow: 0 10px 30px rgba(237, 28, 36, 0.18);
 }
 
 .activeFrame span {
-  color: #ff4500 !important;
+  color: #ed1c24 !important;
   font-weight: 700 !important;
 }
 
 .activeFrame svg {
-  color: #ff4500 !important;
+  color: #ed1c24 !important;
   transform: scale(1.1);
 }
 
@@ -774,20 +774,20 @@
 }
 
 .socialIconMini:hover {
-  background: rgba(255, 69, 0, 0.1) !important;
-  border-color: rgba(255, 69, 0, 0.3) !important;
-  color: #ff4500 !important;
+  background: rgba(237, 28, 36, 0.1) !important;
+  border-color: rgba(237, 28, 36, 0.3) !important;
+  color: #ed1c24 !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(237, 28, 36, 0.15);
 }
 
 .textHighlight {
-  color: #ff4500;
+  color: #ed1c24;
   font-family: var(--font-geist-mono, monospace);
   font-weight: 400;
   font-style: italic;
   letter-spacing: -0.01em;
-  background: linear-gradient(to right, #ff4500 50%, transparent 50%);
+  background: linear-gradient(to right, #ed1c24 50%, transparent 50%);
   background-size: 100% 2px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -839,10 +839,10 @@
   font-size: 0.8rem;
   font-weight: 800;
   color: var(--accent);
-  background: rgba(255, 69, 0, 0.08);
+  background: rgba(237, 28, 36, 0.08);
   padding: 0.3rem 0.7rem;
   border-radius: 8px;
-  border: 1px solid rgba(255, 69, 0, 0.15);
+  border: 1px solid rgba(237, 28, 36, 0.15);
 }
 
 .bentoGasSpentDark {
@@ -964,7 +964,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(255, 69, 0, 0.1);
+  background: rgba(237, 28, 36, 0.1);
   color: var(--accent);
   display: flex;
   align-items: center;
@@ -1022,7 +1022,7 @@
   background: linear-gradient(135deg, rgba(44, 18, 10, 0.6), rgba(26, 8, 3, 0.8));
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 69, 0, 0.15);
+  border: 1px solid rgba(237, 28, 36, 0.15);
   border-radius: 20px;
   padding: 2rem;
   height: 195px;
@@ -1034,7 +1034,7 @@
 
 .partnerBrandCard:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 69, 0, 0.4);
+  border-color: rgba(237, 28, 36, 0.4);
 }
 
 .partnerLogoText {
@@ -1190,7 +1190,7 @@
   transform: translate(-50%, -50%);
   width: 120%;
   height: 120%;
-  background: radial-gradient(circle, rgba(255, 69, 0, 0.12) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(237, 28, 36, 0.12) 0%, transparent 60%);
   opacity: 0;
   pointer-events: none;
   z-index: 1;
@@ -1250,15 +1250,15 @@
 }
 
 .sandboxInputWrapper:focus-within {
-  border-color: rgba(255, 69, 0, 0.4);
-  box-shadow: 0 0 20px rgba(255, 69, 0, 0.08);
+  border-color: rgba(237, 28, 36, 0.4);
+  box-shadow: 0 0 20px rgba(237, 28, 36, 0.08);
   background: rgba(255, 255, 255, 0.05);
 }
 
 .inputGeneratingGlow {
-  border-color: rgba(255, 69, 0, 0.5) !important;
-  box-shadow: 0 0 35px rgba(255, 69, 0, 0.18) !important;
-  background: rgba(255, 69, 0, 0.03) !important;
+  border-color: rgba(237, 28, 36, 0.5) !important;
+  box-shadow: 0 0 35px rgba(237, 28, 36, 0.18) !important;
+  background: rgba(237, 28, 36, 0.03) !important;
 }
 
 .sandboxInput {
@@ -1294,15 +1294,15 @@
 }
 
 .presetTag:hover {
-  background: rgba(255, 69, 0, 0.1);
-  border-color: rgba(255, 69, 0, 0.3);
-  color: #ff4500;
+  background: rgba(237, 28, 36, 0.1);
+  border-color: rgba(237, 28, 36, 0.3);
+  color: #ed1c24;
 }
 
 .presetTagActive {
-  background: rgba(255, 69, 0, 0.15) !important;
-  border-color: rgba(255, 69, 0, 0.4) !important;
-  color: #ff4500 !important;
+  background: rgba(237, 28, 36, 0.15) !important;
+  border-color: rgba(237, 28, 36, 0.4) !important;
+  color: #ed1c24 !important;
 }
 
 /* Full-viewport page ambient vignette glow */
@@ -1314,7 +1314,7 @@
   bottom: 0;
   pointer-events: none;
   z-index: 99999;
-  box-shadow: inset 0 0 70px rgba(255, 69, 0, 0.22);
+  box-shadow: inset 0 0 70px rgba(237, 28, 36, 0.22);
   animation: globalVignetteBreathe 2.2s infinite ease-in-out;
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   opacity: 0;
@@ -1326,10 +1326,10 @@
 
 @keyframes globalVignetteBreathe {
   0%, 100% {
-    box-shadow: inset 0 0 70px rgba(255, 69, 0, 0.2);
+    box-shadow: inset 0 0 70px rgba(237, 28, 36, 0.2);
   }
   50% {
-    box-shadow: inset 0 0 120px rgba(255, 69, 0, 0.48);
+    box-shadow: inset 0 0 120px rgba(237, 28, 36, 0.48);
   }
 }
 
@@ -1357,8 +1357,8 @@
 }
 
 .boxGeneratingGlow {
-  border-color: rgba(255, 69, 0, 0.45) !important;
-  box-shadow: 0 0 45px rgba(255, 69, 0, 0.16) !important;
+  border-color: rgba(237, 28, 36, 0.45) !important;
+  box-shadow: 0 0 45px rgba(237, 28, 36, 0.16) !important;
 }
 
 .outcomeMeta {
@@ -1391,7 +1391,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 69, 0, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(237, 28, 36, 0.12) 0%, transparent 70%);
   animation: glowPulse 2s infinite ease-in-out;
   z-index: 2;
 }
@@ -1658,7 +1658,7 @@
   background: var(--accent);
   border-color: var(--accent);
   transform: scale(1.35);
-  box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
+  box-shadow: 0 0 10px rgba(237, 28, 36, 0.6);
 }
 
 .dotTooltip {
@@ -1725,6 +1725,62 @@
   }
   .cardBlack {
     transform: rotate(8deg) translate(30px, 25px) !important;
+  }
+}
+
+.bentoShareText {
+  z-index: 2;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.bentoShareBadgeWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bentoShareSocials {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .bentoShareText {
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .bentoShareBadgeWrapper {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .bentoShareSocials {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .benefitsCtaRow {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .footerContainer {
+    padding: 2rem 6% 2rem 6% !important;
+    gap: 1.5rem !important;
+  }
+  .footerExtrudedRow {
+    padding: 0 !important;
+    text-align: left !important;
+  }
+  .footerExtrudedRow .extruded-text,
+  .footerExtrudedRow h1 {
+    text-align: left !important;
   }
 }
 

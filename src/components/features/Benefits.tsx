@@ -20,7 +20,7 @@ export function Benefits() {
   const benefitsData = [
     {
       title: "NO SUBSCRIPTIONS",
-      color: "linear-gradient(135deg, #ff5500, #ff2200)",
+      color: "linear-gradient(135deg, #ed1c24, #b30e16)",
       textColor: "#ffffff",
       desc: "Stop stacking monthly charges. Only pay for what you actually use by purchasing AI credits—think of it like buying gas for a car."
     },
@@ -82,7 +82,6 @@ export function Benefits() {
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <span style={{ fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.1em" }}>CREDIT BENEFITS</span>
-                    <span style={{ fontSize: "1.2rem", fontWeight: 900 }}>pe.</span>
                   </div>
                   <div>
                     <h3 style={{ fontSize: "1.5rem", fontWeight: 900, marginBottom: "0.5rem" }}>{b.title}</h3>

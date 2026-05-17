@@ -195,25 +195,25 @@ export default function Home() {
 
             if (stepCards.length === 3) {
               tl.to(stepCards[0], {
-                borderColor: "rgba(255, 69, 0, 0.8)",
-                backgroundColor: "rgba(255, 69, 0, 0.08)",
-                boxShadow: "0 8px 24px rgba(255, 69, 0, 0.12)",
+                borderColor: "rgba(237, 28, 36, 0.8)",
+                backgroundColor: "rgba(237, 28, 36, 0.08)",
+                boxShadow: "0 8px 24px rgba(237, 28, 36, 0.12)",
                 y: -4,
                 ease: "power1.out",
                 duration: 0.2
               }, "slide_1_active+=0.15")
               .to(stepCards[1], {
-                borderColor: "rgba(255, 69, 0, 0.8)",
-                backgroundColor: "rgba(255, 69, 0, 0.08)",
-                boxShadow: "0 8px 24px rgba(255, 69, 0, 0.12)",
+                borderColor: "rgba(237, 28, 36, 0.8)",
+                backgroundColor: "rgba(237, 28, 36, 0.08)",
+                boxShadow: "0 8px 24px rgba(237, 28, 36, 0.12)",
                 y: -4,
                 ease: "power1.out",
                 duration: 0.2
               }, "slide_1_active+=0.55")
               .to(stepCards[2], {
-                borderColor: "rgba(255, 69, 0, 0.8)",
-                backgroundColor: "rgba(255, 69, 0, 0.08)",
-                boxShadow: "0 8px 24px rgba(255, 69, 0, 0.12)",
+                borderColor: "rgba(237, 28, 36, 0.8)",
+                backgroundColor: "rgba(237, 28, 36, 0.08)",
+                boxShadow: "0 8px 24px rgba(237, 28, 36, 0.12)",
                 y: -4,
                 ease: "power1.out",
                 duration: 0.2
@@ -346,7 +346,8 @@ export default function Home() {
       return;
     }
     
-    const labelProgress = trigger.animation.labels[`slide_${index}`] / trigger.animation.totalDuration();
+    const targetLabel = index === 0 ? "slide_0" : `slide_${index}_active`;
+    const labelProgress = trigger.animation.labels[targetLabel] / trigger.animation.totalDuration();
     
     const start = trigger.start;
     const end = trigger.end;

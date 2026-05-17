@@ -40,7 +40,7 @@ export function Hero() {
                 fontFamily: "Garamond, Baskerville, Georgia, serif", 
                 fontStyle: "italic", 
                 fontSize: "var(--hero-italic-size, 1.9rem)", 
-                color: "#ff4500",
+                color: "#ed1c24",
                 fontWeight: 500,
                 letterSpacing: "-0.01em"
               }}>
@@ -64,10 +64,10 @@ export function Hero() {
               Instead of signing up for multiple websites, learning different interfaces, and stacking expensive subscriptions... PromptEdit gives you a single place to access all the major tools.
             </Text>
             <div className={styles.heroCtaWrapper}>
-              <Button>Claim Credit Discount</Button>
+              <Button>Get Started</Button>
               <div className={styles.activeUsers}>
                 <div className={styles.avatarStack}>
-                  <div className={styles.avatar} style={{ backgroundColor: "#ff4500" }}>A</div>
+                  <div className={styles.avatar} style={{ backgroundColor: "#ed1c24" }}>A</div>
                   <div className={styles.avatar} style={{ backgroundColor: "#e0e0e0", color: "#111" }}>C</div>
                   <div className={styles.avatar} style={{ backgroundColor: "#333" }}>+9</div>
                 </div>
@@ -102,7 +102,7 @@ export function Hero() {
                 <div className={styles.heroCardOverlay} />
                 <div className={styles.heroCardContent}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                    <div className={styles.cardChip} style={{ background: "rgba(255, 69, 0, 0.85)", color: "white", borderRadius: "6px", padding: "0.25rem 0.5rem", fontSize: "0.6rem", fontWeight: 700, letterSpacing: "1px" }}>
+                    <div className={styles.cardChip} style={{ background: "rgba(237, 28, 36, 0.85)", color: "white", borderRadius: "6px", padding: "0.25rem 0.5rem", fontSize: "0.6rem", fontWeight: 700, letterSpacing: "1px" }}>
                       RUNWAY GEN-3
                     </div>
                     <span style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.7)", fontFamily: "var(--font-geist-mono, monospace)" }}>0.0150 pe</span>

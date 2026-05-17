@@ -5,7 +5,7 @@ import { Heading } from "@/components/ui/Typography";
 
 export function Partners() {
   return (
-    <section id="partners" className={styles.sectionDark} style={{ position: "relative" }}>
+    <section id="providers" className={styles.sectionDark} style={{ position: "relative" }}>
       {/* Frosted Glass Backdrop Blur Overlay */}
       <div 
         style={{
@@ -44,7 +44,7 @@ export function Partners() {
         {/* Right 2x2 brands grid */}
         <div className={styles.partnerRightGrid}>
           <div className={styles.partnerBrandCard}>
-            <span className={styles.partnerLogoText} style={{ color: "#ff4500" }}>OpenAI</span>
+            <span className={styles.partnerLogoText} style={{ color: "#ed1c24" }}>OpenAI</span>
             <p style={{ fontSize: "0.75rem", opacity: 0.6 }}>GPT-4o & GPT-4 Turbo</p>
           </div>
           <div className={styles.partnerBrandCard}>
